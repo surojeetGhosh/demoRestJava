@@ -1,6 +1,5 @@
 package com.cmdrest.Demo;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,17 +9,10 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.MultivaluedMap;
-import javax.ws.rs.core.Response;
-
 import org.glassfish.jersey.client.ClientConfig;
-import org.glassfish.jersey.client.ClientResponse;
-
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public class RestClient {
 	
@@ -64,7 +56,7 @@ public class RestClient {
 	/*
 	 * 
 	 * Setting resource path of api url
-	 * 
+	 * s
 	 * */
 	public Boolean setResourcePath(String path, MultivaluedMap<String, String> queryParam) {
 		if(webTarget != null) {
